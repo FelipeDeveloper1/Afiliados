@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    height: 15vh;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.logo {
+    width: 20vw;
+}
+
+nav {
+    width: 80vw;
+}
