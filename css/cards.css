@@ -14,13 +14,37 @@
 
 .card {
     display: flex;
+    position: relative;
     flex-direction: column;
+    padding: 20px;
     width: 25vw;
     height: 50vh;
     padding: 20px;
-    background: #3405a3;
     border-radius: 15px;
     box-shadow: 1px 5px 60px 0px #100a886b;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.circle {
+    width: 4vw;
+    height: 8vh;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+    top: -25px;
+    left: -25px;
+}
+
+@keyframes move-up6 {
+    to {
+        transform: translateY(50vh);
+    }
 }
 
 .card_icon {
