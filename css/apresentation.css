@@ -37,23 +37,3 @@
 .text>p {
     font-size: 16pt;
 }
-
-.butons>input {
-    background-color: #f44336;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 2vh;
-}
-
-.butons>input:nth-child(2) {
-    background-color: transparent;
-    border: 1px solid white;
-    margin-left: 1vw;
-}
