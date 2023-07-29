@@ -1,7 +1,6 @@
 .cards {
     display: flex;
-    height: 50vh;
-    margin-bottom: 90vh;
+    height: 80vh;
 }
 
 .container_cards {
