@@ -1,0 +1,59 @@
+.apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(43, 226, 226);
+    background-image: url(../assets/treino.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8vw;
+    width: 37vw;
+    margin-bottom: 2vh;
+}
+
+.title {
+    text-align: justify;
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.text {
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.text>p {
+    font-size: 16pt;
+}
+
+.butons>input {
+    background-color: #f44336;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+.butons>input:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 1vw;
+}

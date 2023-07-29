@@ -6,19 +6,65 @@
 body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
-    height: 15vh;
+    height: 10vh;
+    /* background-color: rgb(10, 10, 86); */
     background-color: black;
-    opacity: 0.8;
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20vw;
+    color: white;
+}
+
+.logo>p {
+    font-size: 20pt;
+    margin-right: 0.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80vw;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    height: 10vh;
+}
+
+ul {
+    display: flex;
+    height: 100%;
+    margin-right: 10vw;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+li:hover {
+    background-color: white;
+    color: black;
 }
