@@ -1,10 +1,10 @@
 class sidebar {
     constructor(lista, menu) {
-        this.document.querySelectorAll(li)
-        this.document.querySelector(ul)
+        this.lista = this.document.querySelectorAll(lista)
+        this.menu = this.document.querySelector(menu)
     }
     init = () => {
-
+        console.log('opa')
     }
 }
 
