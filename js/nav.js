@@ -1,11 +1,11 @@
-class sidebar {
-    constructor(lista, menu) {
-        this.lista = this.document.querySelectorAll(lista)
-        this.menu = this.document.querySelector(menu)
-    }
-    init = () => {
-        console.log('opa')
-    }
-}
+// class sidebar {
+//     constructor(lista, menu) {
+//         this.lista = this.document.querySelectorAll(lista)
+//         this.menu = this.document.querySelector(menu)
+//     }
+//     init = () => {
+//         console.log('opa')
+//     }
+// }
 
-const menu = new sidebar(li, ul)
+// const menu = new sidebar(li, ul)

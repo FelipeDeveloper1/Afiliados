@@ -69,6 +69,17 @@ li:hover {
     color: black;
 }
 
+.outros {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.outros>li {
+    height: 100%;
+}
+
 .butons {
     display: flex;
     margin-top: 2vh;
