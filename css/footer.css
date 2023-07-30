@@ -1,5 +1,16 @@
 footer {
-    height: 20vh;
+    display: flex;
+    align-items: center;
+    height: 10vh;
     background-color: black;
     width: 100vw;
+}
+
+.creditos {
+    color: white;
+    display: flex;
+}
+
+.creditos>a {
+    margin-left: 0.5vw;
 }
