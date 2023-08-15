@@ -12,7 +12,6 @@ body {
 header {
     display: flex;
     height: 10vh;
-    /* background-color: rgb(10, 10, 86); */
     background-color: black;
 }
 
@@ -51,7 +50,7 @@ ul {
     margin-right: 10vw;
 }
 
-li {
+ul>a {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -61,23 +60,58 @@ li {
     padding-left: 2vw;
     padding-right: 2vw;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.4s ease;
 }
 
-li:hover {
+a:hover {
     background-color: white;
     color: black;
 }
 
-.outros {
-    display: flex;
+.dropmenu {
+    display: none;
     align-items: center;
-    height: 100%;
-    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
 }
 
-.outros>li {
-    height: 100%;
+@media(max-width: 1030px) {
+    nav {
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 30vw;
+        left: -30vw;
+        background-color: black;
+        transition: all 0.4s ease;
+    }
+    .sections {
+        flex-direction: column;
+        height: 100%;
+    }
+    ul {
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    .dropmenu {
+        display: flex;
+        margin-left: 2vw;
+    }
+}
+
+.active {
+    left: 0vw;
 }
 
 .butons {
