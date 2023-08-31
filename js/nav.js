@@ -6,11 +6,20 @@ class sidebar {
     }
     handleclick = () => {
         this.dropmenu.addEventListener('click', () => {
+            this.animaLinks()
             this.menu.classList.toggle('active')
         })
     }
+    animaLinks = () => {
+        this.lista.forEach((values, index) => {
+            values.style.animation ? values.style.animation = "" : values.style.animation = `bringlinks ${index / 5 + 0.8}s ease forwards 0.1s`
+        })
+    }
     init = () => {
-        this.handleclick()
+        if (this.dropmenu) {
+            this.handleclick()
+
+        }
     }
 }
 
