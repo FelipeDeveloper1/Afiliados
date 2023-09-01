@@ -1,32 +1,45 @@
 .cards {
     display: flex;
-    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40vh;
+    border: 4px solid black;
 }
 
 .container_cards {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 5px solid wheat;
+    gap: 2vh;
+    height: 100%;
 }
 
 .card {
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 20px;
-    width: 25vw;
-    height: 50vh;
-    padding: 20px;
+    width: 23vw;
     border-radius: 15px;
     box-shadow: 1px 5px 60px 0px #100a886b;
     cursor: pointer;
     transition: all 0.4s ease;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .card:hover {
     transform: scale(1.04);
+}
+
+@media(max-width: 1200px) {
+    .container_cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .container_cards>div:nth-child(3) {
+        border: 1px solid black;
+        grid-column: 1/2;
+    }
 }
 
 .circle {
@@ -42,9 +55,12 @@
 
 @keyframes move-up6 {
     to {
-        transform: translateY(50vh);
+        transform: translateY(55vh);
     }
 }
+
+
+/* elementos do card interno */
 
 .card_icon {
     display: flex;

@@ -5,7 +5,6 @@
     justify-content: center;
     height: 80vh;
     width: 100vw;
-    background-color: rgb(43, 226, 226);
     background-image: url(../assets/treino.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -18,6 +17,9 @@
     margin-right: 8vw;
     /* width: 37vw; */
     margin-bottom: 2vh;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 2%;
 }
 
 .title {
@@ -85,5 +87,8 @@
     .butons {
         flex-direction: column;
         align-items: center;
+    }
+    .butons>:first-child {
+        margin-bottom: 2vh;
     }
 }
