@@ -38,7 +38,7 @@
 }
 
 .text>p {
-    font-size: clamp(0.90rem, 0.605rem + 0.725vw, 1.33rem);
+    font-size: clamp(0.95rem, 0.605rem + 0.725vw, 1.33rem);
     font-weight: bolder;
 }
 
@@ -90,5 +90,8 @@
     }
     .butons>:first-child {
         margin-bottom: 2vh;
+    }
+    .container {
+        margin: auto;
     }
 }

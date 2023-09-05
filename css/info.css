@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+.treino_info {
+    width: 25vw;
+}
+
 .treino_info>img {
     width: 100%;
     height: 100%;
@@ -27,19 +31,37 @@
 }
 
 .info_about>p {
-    font-size: 14pt;
+    font-size: clamp(0.75rem, 0.5625rem + 0.9375vw, 1.2rem);
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .info_about>a {
     line-height: 2;
-    font-size: 15pt;
+    font-size: clamp(0.95rem, 0.620rem + 0.725vw, 1.83rem);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .info_title {
-    font-size: 25pt;
-    font-weight: 600;
+    font-size: clamp(1.5rem, 2rem + 0.725vw, 1.9rem);
+    font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media(max-width: 1300px) {
+    .container_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .info_title {
+        margin: auto;
+    }
+    .info_text {
+        margin: auto;
+    }
+    .treino_info {
+        grid-row: 2;
+        margin: auto;
+    }
 }
